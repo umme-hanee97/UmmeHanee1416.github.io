@@ -29,11 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
 function downloadFile(e) {
     e.preventDefault();
     const link = document.createElement('a');
-    link.href = 'UmmeHanee_CV.pdf';
+    link.href = 'CV_of_UmmeHanee.pdf';
     link.download = 'ResumeOfUmmeHanee.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    console.log('Download initiated');
 
 }
