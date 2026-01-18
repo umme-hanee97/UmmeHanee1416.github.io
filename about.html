@@ -17,6 +17,14 @@
     </head>
 
     <body class="container">
+
+            <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+    <div id="navbar"></div>
+    
         <header id="aboutHead">
             <h1 class="display-1 display-sm-2 display-md-3 display-lg-4">About Me.</h1>
         </header>
